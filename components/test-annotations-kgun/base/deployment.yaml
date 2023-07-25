@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-annotations-kgun
     spec:
       containers:
-      - image: hello-world:latest
+      - image: quay.io/tnevrlka-test/build-e2e-iuvv-tenant/test-annotations-app-ldkw/test-annotations-kgun@sha256:bfea9f8e7238d0555946059ae2e716596fb8c82702b2a345085cc5dcd4f4d364
         name: my-nginx
         ports:
         - containerPort: 8080
