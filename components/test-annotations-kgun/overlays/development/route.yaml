@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: test-annotations-kgun
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test-annotations-kgun
+    app.kubernetes.io/part-of: test-annotations-app-ldkw
+  name: test-annotations-kgunplhw
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: test-annotations-kgun
+    weight: 100
+status: {}

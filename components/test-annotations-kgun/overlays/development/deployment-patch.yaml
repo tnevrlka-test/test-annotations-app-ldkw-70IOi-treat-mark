@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-kgun
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-iuvv-tenant/test-annotations-app-ldkw/test-annotations-kgun@sha256:bfea9f8e7238d0555946059ae2e716596fb8c82702b2a345085cc5dcd4f4d364
+        name: my-nginx
+        resources: {}
+status: {}
